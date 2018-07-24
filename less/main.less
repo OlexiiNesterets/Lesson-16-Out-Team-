@@ -76,38 +76,6 @@
             text-align: center;
         }
 
-        .social {
-            display: flex;
-            width: 135px;
-            justify-content: space-between;
-
-            &__img {
-                flex-basis: 30px;
-                height: 30px;
-                position: relative;
-
-                &--fb {
-                    background: url(../img/social.png);
-                }
-
-                &--tw {
-                    background: url(../img/social.png) 100px 0;
-                }
-
-                &--google {
-                    background: url(../img/social.png) 65px 0;
-                }
-
-                &--linkedn {
-                    background: url(../img/social.png) 165px 0;
-                }
-            }
-
-            &__ref {
-                .round-button();
-            }
-        }
-
         .info__about {
             color: @black;
             font: 500 14px/24px Raleway;
@@ -133,23 +101,6 @@
                 width: 13%;
                 height: 30px;
                 border-bottom: 3px solid @yellow;
-            }
-        }
-
-        .info__button {
-            .typical-border();
-            .upper-color-text(@light-black);
-            font-size: 13px;
-            font-weight: 700;
-            background: transparent;
-            width: 118px;
-            height: 22px;
-            outline: none;
-			cursor: pointer;
-			
-            &:active {
-                background: @yellow;
-                color: white;
             }
         }
     }

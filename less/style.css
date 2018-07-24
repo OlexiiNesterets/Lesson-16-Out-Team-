@@ -1,4 +1,75 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto');
+.button {
+  border: 1px solid #ffcc00;
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: transparent;
+  width: 118px;
+  height: 22px;
+  outline: none;
+  cursor: pointer;
+}
+.button:active {
+  background: #ffcc00;
+  color: white;
+}
+.radio {
+  position: relative;
+  cursor: pointer;
+}
+.radio::before {
+  background: #ffcc00;
+  content: " ";
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.radio:checked::after {
+  background: white;
+  content: " ";
+  border: 1px solid #ffcc00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.social {
+  display: flex;
+  width: 135px;
+  justify-content: space-between;
+}
+.social__img {
+  flex-basis: 30px;
+  height: 30px;
+  position: relative;
+}
+.social__img--fb {
+  background: url(../img/social.png);
+}
+.social__img--tw {
+  background: url(../img/social.png) 100px 0;
+}
+.social__img--google {
+  background: url(../img/social.png) 65px 0;
+}
+.social__img--linkedn {
+  background: url(../img/social.png) 165px 0;
+}
+.social__ref {
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 .container {
   width: 1100px;
   margin: 0 auto;
@@ -134,36 +205,6 @@
   font: 400 24px/36px Raleway;
   text-align: center;
 }
-.main__info .social {
-  display: flex;
-  width: 135px;
-  justify-content: space-between;
-}
-.main__info .social__img {
-  flex-basis: 30px;
-  height: 30px;
-  position: relative;
-}
-.main__info .social__img--fb {
-  background: url(../img/social.png);
-}
-.main__info .social__img--tw {
-  background: url(../img/social.png) 100px 0;
-}
-.main__info .social__img--google {
-  background: url(../img/social.png) 65px 0;
-}
-.main__info .social__img--linkedn {
-  background: url(../img/social.png) 165px 0;
-}
-.main__info .social__ref {
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
 .main__info .info__about {
   color: #333333;
   font: 500 14px/24px Raleway;
@@ -189,51 +230,10 @@
   height: 30px;
   border-bottom: 3px solid #ffcc00;
 }
-.main__info .info__button {
-  border: 1px solid #ffcc00;
-  color: #666666;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 700;
-  background: transparent;
-  width: 118px;
-  height: 22px;
-  outline: none;
-  cursor: pointer;
-}
-.main__info .info__button:active {
-  background: #ffcc00;
-  color: white;
-}
 .slider {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
-}
-.slider .radio {
-  position: relative;
-  cursor: pointer;
-}
-.slider .radio::before {
-  background: #ffcc00;
-  content: " ";
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-.slider .radio:checked::after {
-  background: white;
-  content: " ";
-  border: 1px solid #ffcc00;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
