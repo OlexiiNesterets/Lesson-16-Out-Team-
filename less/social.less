@@ -1,0 +1,32 @@
+
+.social {
+    display: flex;
+    width: 135px;
+    justify-content: space-between;
+
+    &__img {
+        flex-basis: 30px;
+        height: 30px;
+        position: relative;
+
+        &--fb {
+            background: url(../img/social.png);
+        }
+
+        &--tw {
+            background: url(../img/social.png) 100px 0;
+        }
+
+        &--google {
+            background: url(../img/social.png) 65px 0;
+        }
+
+        &--linkedn {
+            background: url(../img/social.png) 165px 0;
+        }
+    }
+
+    &__ref {
+        .round-button();
+    }
+}

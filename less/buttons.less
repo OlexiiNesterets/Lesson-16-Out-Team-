@@ -1,0 +1,35 @@
+
+.button {
+    .typical-border();
+    .upper-color-text(@light-black);
+    font-size: 13px;
+    font-weight: 700;
+    background: transparent;
+    width: 118px;
+    height: 22px;
+    outline: none;
+    cursor: pointer;
+    
+    &:active {
+        background: @yellow;
+        color: white;
+    }
+}
+
+.radio {
+    position: relative;
+    cursor: pointer;
+    
+    &::before {
+        background: @yellow;
+        content: " ";
+        .round-button();
+    }
+    
+    &:checked::after {
+        background: white;
+        content: " ";
+        .typical-border();
+        .round-button();
+    }
+}
