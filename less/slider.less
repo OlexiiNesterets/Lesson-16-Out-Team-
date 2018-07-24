@@ -1,0 +1,23 @@
+.slider {
+    display: flex;
+    justify-content: center;
+	padding-bottom: 40px;
+	
+    .radio {
+		position: relative;
+		cursor: pointer;
+		
+        &::before {
+            background: @yellow;
+            content: " ";
+            .round-button();
+		}
+		
+        &:checked::after {
+            background: white;
+            content: " ";
+            .typical-border();
+            .round-button();
+        }
+    }
+}
