@@ -7,7 +7,7 @@
     &__img {
         flex-basis: 30px;
         height: 30px;
-        position: relative;
+        border-radius: 50%;
 
         &--fb {
             background: url(../img/social.png);
@@ -24,9 +24,9 @@
         &--linkedn {
             background: url(../img/social.png) 165px 0;
         }
-    }
 
-    &__ref {
-        .round-button();
+        &:hover {
+            box-shadow: 0 0 2px @dark-grey;
+        }
     }
 }

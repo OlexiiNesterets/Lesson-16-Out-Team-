@@ -1,6 +1,6 @@
 
 .button {
-    .typical-border();
+    border: 1px solid @yellow;
     .upper-color-text(@light-black);
     font-size: 13px;
     font-weight: 700;
@@ -21,15 +21,25 @@
     cursor: pointer;
     
     &::before {
-        background: @yellow;
         content: " ";
-        .round-button();
+        background: @yellow;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
     
     &:checked::after {
-        background: white;
         content: " ";
-        .typical-border();
-        .round-button();
+        border: 1px solid @yellow;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 }
